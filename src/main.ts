@@ -12,15 +12,15 @@ import { createApp } from "vue";
 import router from "./router";
 import App from "./App.vue";
 import TuiPlus from "@wocwin/t-ui-plus";
+import * as Icons from "@element-plus/icons-vue";
 import "@wocwin/t-ui-plus/lib/style.css";
 import JcUi from "jc-test-ui";
 import "jc-test-ui/lib/style.css";
 import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
-
-createApp(App)
-  .use(router)
-  .use(TuiPlus)
-  .use(JcUi)
-  .use(ElementPlus)
-  .mount("#app");
+const app = createApp(App);
+app.use(router).use(TuiPlus).use(JcUi).use(ElementPlus).mount("#app");
+// 注册全局组件
+Object.keys(Icons).forEach((key) => {
+  app.component(key, Icons[key as keyof typeof Icons]);
+});

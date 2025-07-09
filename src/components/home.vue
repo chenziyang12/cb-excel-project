@@ -118,7 +118,6 @@
 import { ref, computed } from "vue";
 import * as XLSX from "xlsx";
 import { ElMessage } from "element-plus";
-import { UploadFilled } from "@element-plus/icons-vue";
 import { strToDate } from "../assets/js/excel";
 
 const kingdeeRows = ref<any[]>([]); // 金蝶账单明细
