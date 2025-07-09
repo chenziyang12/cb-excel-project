@@ -1,0 +1,50 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\admin\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\mingw64\libexec\git-core;C:\Program Files\Git\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\admin\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\软件\Scripts\;D:\软件\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\.dotnet\tools;D:\软件\Microsoft VS Code\bin;C:\Users\admin\AppData\Roaming\npm;C:\Users\admin\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'E:\项目\v3-test\node_modules\@esbuild\win32-x64\esbuild.exe'
+
+npm manifest: 
+  {
+      "name": "v3-test",
+      "private": true,
+      "version": "0.0.0",
+      "type": "module",
+      "scripts": {
+          "dev": "vite",
+          "build": "vue-tsc && vite build",
+          "preview": "vite preview"
+      },
+      "dependencies": {
+          "@wocwin/t-ui-plus": "^1.3.1",
+          "element-plus": "2.2.6",
+          "jc-test-ui": "^1.1.9",
+          "vue": "^3.2.47",
+          "vue-router": "^4.2.4"
+      },
+      "devDependencies": {
+          "@vitejs/plugin-vue": "^4.1.0",
+          "@vitejs/plugin-vue-jsx": "^3.0.1",
+          "typescript": "^4.9.3",
+          "vite": "^4.2.0",
+          "vue-tsc": "^1.2.0"
+      }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
